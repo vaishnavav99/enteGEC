@@ -168,3 +168,57 @@ a:active, a:focus, a:hover {
     font-size: 17px;
     line-height: 25px;
 }
+
+#register h4 {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 63.19%;
+
+    /* or 25px */
+    text-align: center;
+
+    color: #06111B;
+}
+
+#register h2 {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 63.19%;
+    text-align: center;
+
+    color: #41A4FF;
+}
+
+#register p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    text-align: center;
+}
+
+.btn-register {
+    background: #41A4FF;
+    border-radius: 335px;
+    width: 190px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+
+
+}
+
+textarea {
+    resize: none;
+}
