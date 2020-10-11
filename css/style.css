@@ -8,6 +8,12 @@
     
     --black: #000000;
 }
+
+@font-face {
+    font-family: Social Circles;
+    src: url('../fonts/Social\ Circles\ v1.1.otf');
+}
+
 body {
     background-color: var(--backgroundColor);
     font-family: 'Roboto', sans-serif;
@@ -24,6 +30,7 @@ body {
     width: 100%;
     Top: 0;
     Left: 0;
+    z-index: -1;
 }
 
 #home .vector1 {
@@ -33,7 +40,7 @@ body {
     left: 0;
     top: 0;
     border-radius: 0px;
-
+    z-index: -1;
 }
 
 #home img {
@@ -116,4 +123,48 @@ body {
     right: 43px;
 
     border-top: solid 2px #000000;
+}
+
+#home .social-links {
+    list-style: none;
+    position: absolute;
+    top: 500px;
+    left: 601px;
+}
+
+#home .social-links li {
+    margin-left: 10px;
+    display: inline;
+    z-index: 999;
+    bottom: 0;
+}
+
+#home .social-links li a {
+    font-family: Social Circles;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 69px;
+    color: #FFFFFF;
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+.btn-gec {
+    position: absolute;
+    width: 166px;
+    left: 611px;
+    top: 550px;
+    color: #fff;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 335px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
 }
