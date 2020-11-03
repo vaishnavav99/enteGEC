@@ -20,8 +20,46 @@ body {
     overflow-x: hidden;
 }
 
+.bg-color {
+    background-color: #41A4FF;
+}
+
+
+.navbar .nav-item {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+}
+
+.navbar .active {
+    background-color: #2569A9;
+}
+
+
+.navbar .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .content {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.navabr .content h6 {
+    font-size: .8rem;
+}
+
+.navbar .content ul li {
+    color: rgb(61, 61, 61);
+    font-size: .8rem;
+}
+
+.navbar .content ul li a {
+    color: rgb(61, 61, 61);
+}
+
 #home {
-    height: 100vh;
+    height: 90vh;
 }
 
 #home .vector2 {
@@ -44,17 +82,14 @@ body {
 }
 
 #home img {
-    position: absolute;
-    height: 341px;
-    width: 555px;
+    height: auto;
+    width: 505px;
     top: 100px;
     border-radius: 0px;
 }
 
 #home h2 {
-    position: absolute;
     width: 449px;
-    height: 138px;
     left: 100px;
     top: 430px;
     font-style: italic;
@@ -72,9 +107,7 @@ body {
 }
 
 #home p {
-    position: absolute;
     width: 377px;
-    height: 79px;
     left: 100px;
     top: 522px;
 
@@ -87,25 +120,15 @@ body {
 }
 
 .new-updates {
-    position: absolute;
     width: 333px;
     height: 500px;
-    top: 90px;
-    right: -10px;
-    
-
+    padding: 1rem;
     background: linear-gradient(180deg, #E9E9E9 47.92%, rgba(233, 233, 233, 0) 100%);
     border-radius: 27px;
+    margin: 0 auto;
 }
 
 .new-updates h4 {
-    position: absolute;
-    width: 165px;
-    height: 32px;
-
-    top: 20px;
-    right: 90px;
-
     font-style: italic;
     font-weight: 500;
     font-size: 20px;
@@ -117,26 +140,20 @@ body {
 }
 
 .new-updates hr {
-    position: absolute;
-    top: 40px;
     width: 250px;
-    right: 43px;
-
     border-top: solid 2px #000000;
 }
 
 #home .social-links {
     list-style: none;
-    position: absolute;
-    top: 500px;
-    left: 601px;
+    margin: 0 auto;
+    margin-top: -1rem;
+    padding: 0;
 }
 
 #home .social-links li {
-    margin-left: 10px;
+    margin-right: 10px;
     display: inline;
-    z-index: 999;
-    bottom: 0;
 }
 
 #home .social-links li a {
@@ -153,20 +170,19 @@ a:active, a:focus, a:hover {
 }
 
 .btn-gec {
-    position: absolute;
-    width: 166px;
-    left: 611px;
-    top: 550px;
+    width: 160px;
+    height: 35px;
     color: #fff;
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 335px;
-
+    margin: 0 auto;
     font-family: Roboto;
     font-style: italic;
     font-weight: bold;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 18px;
+    margin-top: -1rem;
 }
 
 #register h4 {
@@ -222,3 +238,20 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 textarea {
     resize: none;
 }
+
+.login-section {
+    height: 90vh;
+}
+
+.login-section img {
+    height: 90vh;
+    position: absolute;
+}
+
+@media all and (min-width: 992px) {
+	.navbar{ padding-top: 0; padding-bottom: 0; }
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+	.navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+}
+

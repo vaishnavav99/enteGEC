@@ -9,6 +9,146 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background: #fff;">
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-color">
+           
+           <ul class="navbar-nav mx-auto">
+               <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+               <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link" href="#" data-toggle="dropdown">Ente GEC</a>
+                <div class="dropdown-menu megamenu">
+                  <div class="row justify-content-center">
+                      <div class="col-md-2 ">
+                          <div class="content">
+                          <h6>About GEC</h6>
+                            <ul>
+                                <li><a href="#">Life@GEC</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <div class="content">
+                          <h6>Tech Events</h6>
+                          <ul>
+                              <li>
+                                  <a href="#">Invento</a>
+                              </li>
+                              <li>
+                                  <a href="#">Projects Expo</a>
+                              </li>
+                              <li>
+                                  <a href="#">Depat. Tech Events</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <div class="content">
+                          <h6>Sports Events</h6>
+                          <ul>
+                              <li>
+                                <a href="#">Athlets</a>
+                              </li>
+                              <li>
+                                <a href="#">GEC Football</a>
+                              </li>
+                              <li>
+                                <a href="#">GEC Cricket</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <div class="content">
+                          <h6>Arts Events</h6>
+                          <ul>
+                              <li>
+                                  <a href="#">Daksha</a>
+                              </li>
+                              <li>
+                                  <a href="#">Fresher's Day</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                 </div>
+                </li>
+                <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link" href="#" data-toggle="dropdown">Careers</a>
+                    <div class="dropdown-menu megamenu">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                            <div class="content">
+                            <h6>Placement Cell</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content">
+                            <h6>StartUps</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="content">
+                            <h6>TBI</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link" href="#" data-toggle="dropdown">Contacts</a>
+                    <div class="dropdown-menu megamenu">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="content">
+                                    <h6>Gec Palakkad</h6>
+                                    <ul>
+                                        <li><a href="#">Life@GEC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="content">
+                                    <h6>Alumni Coordinator</h6>
+                                <ul>
+                                    <li>Ph : <a href="#">+91 999 999 9999</a></li>
+                                    <li>Mail: <a href="#">alumni.gecpkd@gmail.com</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+           </ul>
+           <ul class="navbar-nav">
+               <li class="nav-item active">
+                   <a class="nav-link" href="login.html">Login</a>
+               </li>
+           </ul>
+           </nav>
+    </header>
+    <div class="login-section">
+        <img src="./img/WhatsApp Image 2020-09-17 at 6.49 1.png" alt="gec" class="login-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-md-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+          });
+    </script>
 </body>
 </html>
