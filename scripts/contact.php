@@ -2,20 +2,21 @@
 require_once("connect_Db.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
-    $name = $_POST['name']; 
-    $address = $_POST['address'];
-    $gender = $_POST['gender'];
-    $branch = $_POST['branch'];
+    $fname = $_POST['fname']; 
+    $mname = $_POST['mname']; 
+    $lname = $_POST['lname']; 
+    $stream = $_POST['stream'];
     $batch = $_POST['batch'];
+    $working_value = $_POST['working'];
+    $job_desc = $_POST['job_desc'];
     $email = $_POST['email'];
-    $mobile = $_POST['mno1'];
-    $f_mobile = $_POST['mno2'];
-    $higher_education = $_POST['edu'];
-    $working = $_POST['working'];
+    $password = $_POST['password1'];
+    
+    $hash = password_hash($password, PASSWORD_DEFAULT);
 
     $connectDb = new Connect_Db();
     $Conn = $connectDb->Connect();
-    $sql = "INSERT INTO `gec` (`sl_no`, `name`, `address`, `gender`, `branch`, `batch`, `email`, `mobile`, `f_mobile`, `higher_education`, `working`) VALUES (NULL, '".$name."', '".$address."', '".$gender."', '".$branch."', '".$batch."', '".$email."', '".$mobile."', '".$f_mobile."', '".$higher_education."', '".$working."');";
+    $sql = "INSERT INTO `gec` (`sl_no`, `fname`, `mname`, `lname`, `stream`, `batch`, `working`, `job_desc`, `email`, `password`) VALUES (NULL, '".$fname."', '".$mname."', '".$lname."', '".$stream."', '".$batch."', '".$working."', '".$job_desc."', '".$email."', '".$hash."');";
 
     if($result = $Conn->query($sql))
     {	
@@ -32,6 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>");   
     }
     $connectDb->Disconnect();
-  }
-    
+}
+
 ?>
