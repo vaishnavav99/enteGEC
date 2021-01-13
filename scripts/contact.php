@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $connectDb = new Connect_Db();
     $Conn = $connectDb->Connect();
-    $sql = "INSERT INTO `gec` (`sl_no`, `fname`, `mname`, `lname`, `stream`, `batch`, `working`, `job_desc`, `email`, `password`) VALUES (NULL, '".$fname."', '".$mname."', '".$lname."', '".$stream."', '".$batch."', '".$working."', '".$job_desc."', '".$email."', '".$hash."');";
+    $sql = "INSERT INTO `gec` (`sl_no`, `fname`, `mname`, `lname`, `stream`, `batch`, `working`, `job_desc`, `email`, `password`) VALUES (NULL, '".$fname."', '".$mname."', '".$lname."', '".$stream."', '".$batch."', '".$working_value."', '".$job_desc."', '".$email."', '".$hash."');";
 
     if($result = $Conn->query($sql))
     {	
